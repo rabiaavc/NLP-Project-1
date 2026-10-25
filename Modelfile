@@ -58,18 +58,34 @@ SLOT TYPES:
 - weather_attribute: A weather-related property.
 - weather_descriptor: Description of weather conditions.
 
+
 RULES:
 - Return only one valid JSON object.
 - Do not include explanations or Markdown.
-- Use exactly one intent from the INTENTS list.
-- Use only slot types from the SLOT TYPES list.
-- Extract only information found in the original sentence.
+- The JSON object must contain exactly two top-level keys: "intent" and "slots".
+- The "intent" value must be one of the six allowed intents.
+- The "slots" value must always be a JSON array.
+- Every item in "slots" must contain exactly two string keys: "type" and "value".
+- The "type" value must be one of the allowed slot types.
+- Never use slot type names directly as JSON keys.
 - Copy slot values exactly from the original sentence.
 - Preserve Turkish suffixes, apostrophes, punctuation, and spelling.
 - Do not translate, normalize, or invent slot values.
-- If there are multiple slots, extract all of them.
-- If there are no slots, return an empty list.
+- Extract all relevant slots from the sentence.
+- If there are no slots, return an empty array.
+
+
 
 OUTPUT FORMAT:
-{"intent": "...", "slots": [{"type": "...", "value": "..."}]}
+{
+  "intent": "allowed_intent_name",
+  "slots": [
+    {
+      "type": "allowed_slot_type",
+      "value": "exact_text_from_input"
+    }
+  ]
+}
+
+Always follow this structure.
 """
