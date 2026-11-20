@@ -1,0 +1,17 @@
+Test seti: 120 örnek (LLM v4_reason sentiment accuracy: 0.992, v2: 0.942)
+
+Bag-of-Words + LR                              n_train= 80  accuracy=0.717  macro F1=0.717
+TF-IDF + LR                                    n_train= 80  accuracy=0.692  macro F1=0.691
+TF-IDF (1-2 gram) + LR                         n_train= 80  accuracy=0.675  macro F1=0.675
+
+10 etiketli örnekle TF-IDF + LR (5 farklı rastgele seçim):
+  seed 1                                       n_train= 10  accuracy=0.567  macro F1=0.566
+  seed 2                                       n_train= 10  accuracy=0.592  macro F1=0.583
+  seed 3                                       n_train= 10  accuracy=0.550  macro F1=0.550
+  seed 4                                       n_train= 10  accuracy=0.525  macro F1=0.523
+  seed 5                                       n_train= 10  accuracy=0.558  macro F1=0.551
+  ortalama accuracy=0.558  min=0.525  max=0.592
+
+Sınıflar: [np.str_('negative'), np.str_('positive')]  (katsayı > 0: positive)
+En güçlü 'negative' kelimeleri: was, food, not, prices, no, at, but, worth, terrible, rude
+En güçlü 'positive' kelimeleri: staff, good, great, of, friendly, always, well, best, fresh, in
