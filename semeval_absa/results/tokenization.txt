@@ -1,0 +1,24 @@
+Tokenizer: Qwen/Qwen3-1.7B (vocab size 151669)
+
+== kitaplarımızdan ==
+'kitaplarımızdan': 4 token -> ['kit', 'ap', 'larımız', 'dan']
+' kitaplarımızdan': 4 token -> [' kit', 'ap', 'larımız', 'dan']
+
+== Aynı kök, farklı ekler ==
+'kitap'                 2 token -> ['kit', 'ap']
+'kitaplar'              3 token -> ['kit', 'ap', 'lar']
+'kitaplarımız'          3 token -> ['kit', 'ap', 'larımız']
+'kitaplarımızdan'       4 token -> ['kit', 'ap', 'larımız', 'dan']
+'books'                 1 token -> ['books']
+'our books'             2 token -> ['our', ' books']
+'from our books'        3 token -> ['from', ' our', ' books']
+
+== Türkçe ve İngilizce karşılaştırma (token sayısı: HF tokenizer / Ollama prompt_eval_count) ==
+EN  9 /  9  One of our books is on the table.
+TR 12 / 12  Kitaplarımızdan biri masanın üstünde.   (TR/EN = 1.33, karakter: 37 vs 33)
+EN 11 / 11  The food was great but the service was very slow.
+TR 16 / 16  Yemek harikaydı ama servis çok yavaştı.   (TR/EN = 1.45, karakter: 39 vs 49)
+EN 12 / 12  The waiters were rude and the prices were too high.
+TR 15 / 15  Garsonlar kabaydı ve fiyatlar çok yüksekti.   (TR/EN = 1.25, karakter: 43 vs 51)
+
+Toplam: EN 32 token, TR 43 token, oran 1.34
