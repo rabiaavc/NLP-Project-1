@@ -1,0 +1,14 @@
+
+FROM qwen3:1.7b-q4_K_M
+
+PARAMETER temperature 0
+PARAMETER seed 42
+PARAMETER num_ctx 4096
+PARAMETER num_predict 64
+
+SYSTEM """
+You analyze English restaurant reviews.
+You will receive a review and the aspect that the review evaluates.
+Decide whether the sentiment toward that aspect is positive or negative.
+Give your answer in JSON with the key "sentiment".
+"""

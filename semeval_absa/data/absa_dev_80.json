@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1001,
+    "text": "It was so bad I actually refused to pay for my food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "word_count": 12
+  },
+  {
+    "id": 1002,
+    "text": "Definitely not worth the price!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "price",
+    "word_count": 5
+  },
+  {
+    "id": 1003,
+    "text": "This is the perfect date spot for Williamsburg couples.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "date spot",
+    "word_count": 9
+  },
+  {
+    "id": 1004,
+    "text": "Oh, don't even let me start with how expensive the bills were!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bills",
+    "word_count": 12
+  },
+  {
+    "id": 1005,
+    "text": "The flavors are very fresh and pretty inobtrusive, nothing flashy.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "flavors",
+    "word_count": 10
+  },
+  {
+    "id": 1006,
+    "text": "I ordered the smoked salmon and roe appetizer and it was off flavor.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "smoked salmon and roe appetizer",
+    "word_count": 13
+  },
+  {
+    "id": 1007,
+    "text": "Light, refreshing summer rolls (not fried) remind me of Vietnamese places in Paris.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "summer rolls",
+    "word_count": 13
+  },
+  {
+    "id": 1008,
+    "text": "The seats are uncomfortable if you are sitting against the wall on wooden benches.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "seats",
+    "word_count": 14
+  },
+  {
+    "id": 1009,
+    "text": "The sandwiches are dry, tasteless and way overpriced.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sandwiches",
+    "word_count": 8
+  },
+  {
+    "id": 1010,
+    "text": "For the price, you cannot eat this well in Manhattan.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "price",
+    "word_count": 10
+  },
+  {
+    "id": 1011,
+    "text": "The staff has always been attentive and kind, and I've always been amazed at how they've handled all the various different group sizes that come in.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "word_count": 26
+  },
+  {
+    "id": 1012,
+    "text": "Terrible, terrible management - deserves to be shut-down.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "management",
+    "word_count": 8
+  },
+  {
+    "id": 1013,
+    "text": "Pizza was a little soggy.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Pizza",
+    "word_count": 5
+  },
+  {
+    "id": 1014,
+    "text": "The specials are usually quite good too.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "specials",
+    "word_count": 7
+  },
+  {
+    "id": 1015,
+    "text": "All my co-workers were amazed at how small the dish was.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dish",
+    "word_count": 11
+  },
+  {
+    "id": 1016,
+    "text": "Been going here since it opened have seen the quality value decrease considerably.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "quality value",
+    "word_count": 13
+  },
+  {
+    "id": 1017,
+    "text": "Quick and friendly service.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "service",
+    "word_count": 4
+  },
+  {
+    "id": 1018,
+    "text": "Late nite omelletes are not good here, there is no variety!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "omelletes",
+    "word_count": 11
+  },
+  {
+    "id": 1019,
+    "text": "And the prices were way to high for what you get.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "word_count": 11
+  },
+  {
+    "id": 1020,
+    "text": "one of the best Chicken Tikka Masala.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Chicken Tikka Masala",
+    "word_count": 7
+  },
+  {
+    "id": 1021,
+    "text": "The strong scents coming from the left and right of me negatively affected my taste buds.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "scents",
+    "word_count": 16
+  },
+  {
+    "id": 1022,
+    "text": "Last time I went here, the waitress didn't come back after taking our order.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waitress",
+    "word_count": 14
+  },
+  {
+    "id": 1023,
+    "text": "The staff is courteous and friendly.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "word_count": 6
+  },
+  {
+    "id": 1024,
+    "text": "Not worth the prices.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "word_count": 4
+  },
+  {
+    "id": 1025,
+    "text": "The sandwhiches are out-of-this world!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sandwhiches",
+    "word_count": 5
+  },
+  {
+    "id": 1026,
+    "text": "I must say the view of NYC is so beautiful!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "view",
+    "word_count": 10
+  },
+  {
+    "id": 1027,
+    "text": "THE BIG COMPLAINT: NO TOASTING AVAILABLE.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "TOASTING",
+    "word_count": 6
+  },
+  {
+    "id": 1028,
+    "text": "The food now is inconsistent.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "word_count": 5
+  },
+  {
+    "id": 1029,
+    "text": "Beef noodle soup is good as well.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Beef noodle soup",
+    "word_count": 7
+  },
+  {
+    "id": 1030,
+    "text": "The food is terrible and overall, I would have to say avoid at all costs.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "word_count": 15
+  },
+  {
+    "id": 1031,
+    "text": "Great pizza for lunch place.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pizza",
+    "word_count": 5
+  },
+  {
+    "id": 1032,
+    "text": "We all ate pasta entre'es, which were great.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pasta entre'es",
+    "word_count": 8
+  },
+  {
+    "id": 1033,
+    "text": "but the service was a bit slow.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "word_count": 7
+  },
+  {
+    "id": 1034,
+    "text": "The Yellowtail was particularly good as well.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Yellowtail",
+    "word_count": 7
+  },
+  {
+    "id": 1035,
+    "text": "The lava cake dessert was incredible and I recommend it.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "lava cake dessert",
+    "word_count": 10
+  },
+  {
+    "id": 1036,
+    "text": "My wife and I ate here earlier this week and have not stopped ranting and raving about the food.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "word_count": 19
+  },
+  {
+    "id": 1037,
+    "text": "My friend ordered some of their special sushi rolls which had excellent presentation and tasted great!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sushi rolls",
+    "word_count": 16
+  },
+  {
+    "id": 1038,
+    "text": "Fish was overdone.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Fish",
+    "word_count": 3
+  },
+  {
+    "id": 1039,
+    "text": "I work near-by, and they have the BEST oatmeal in the neighborhood- not a packaged or quick-cooked item.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "oatmeal",
+    "word_count": 18
+  },
+  {
+    "id": 1040,
+    "text": "My husband and I enjoy Sangria.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Sangria",
+    "word_count": 6
+  },
+  {
+    "id": 1041,
+    "text": "Ambience is so cute and quaint, good for business although we were there on vacation.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Ambience",
+    "word_count": 15
+  },
+  {
+    "id": 1042,
+    "text": "Edible but really a ripoff at those prices given whats in the area.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "word_count": 13
+  },
+  {
+    "id": 1043,
+    "text": "I was here a few weeks back and we had the worst customer service experience at a restaurant ever.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "customer service",
+    "word_count": 19
+  },
+  {
+    "id": 1044,
+    "text": "The lox is always fresh too.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "lox",
+    "word_count": 6
+  },
+  {
+    "id": 1045,
+    "text": "This was the worst dining experience I've ever had.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dining experience",
+    "word_count": 9
+  },
+  {
+    "id": 1046,
+    "text": "The people that work there are always so friendly you forget you are in New York sometimes.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "people",
+    "word_count": 17
+  },
+  {
+    "id": 1047,
+    "text": "Not too crazy about their sake martini.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sake martini",
+    "word_count": 7
+  },
+  {
+    "id": 1048,
+    "text": "Consequently, their burgers fell apart in their hands and made such a mess that they did'nt feel like finishing them.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "burgers",
+    "word_count": 20
+  },
+  {
+    "id": 1049,
+    "text": "I had the best ravioli ever.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "ravioli",
+    "word_count": 6
+  },
+  {
+    "id": 1050,
+    "text": "I ate here a week ago and found most dishes average at best and too expensive.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dishes",
+    "word_count": 16
+  },
+  {
+    "id": 1051,
+    "text": "Truly the mark of an attentive waiter.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "waiter",
+    "word_count": 7
+  },
+  {
+    "id": 1052,
+    "text": "The food arrived 20 minutes after I called, cold and soggy.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "word_count": 11
+  },
+  {
+    "id": 1053,
+    "text": "Decor leaves something to be desired.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Decor",
+    "word_count": 6
+  },
+  {
+    "id": 1054,
+    "text": "I have to say I have never had a disapointing meal here.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "meal",
+    "word_count": 12
+  },
+  {
+    "id": 1055,
+    "text": "And the bill was outragous.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bill",
+    "word_count": 5
+  },
+  {
+    "id": 1056,
+    "text": "I'm still mad that i had to pay for lousy food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "word_count": 11
+  },
+  {
+    "id": 1057,
+    "text": "What generous portions!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "portions",
+    "word_count": 3
+  },
+  {
+    "id": 1058,
+    "text": "I've been coming here as a child and always come back for the taste.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "taste",
+    "word_count": 14
+  },
+  {
+    "id": 1059,
+    "text": "Not enough wines by the glass either.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "wines by the glass",
+    "word_count": 7
+  },
+  {
+    "id": 1060,
+    "text": "Took my mom for Mother's Day, and the maitre d' was pretty rude.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "maitre d'",
+    "word_count": 13
+  },
+  {
+    "id": 1061,
+    "text": "We could not catch our waiter's eye, and he ignored us.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waiter",
+    "word_count": 11
+  },
+  {
+    "id": 1062,
+    "text": "I fell in love with the egg noodles in the beef broth with shrimp dumplings and slices of BBQ roast pork.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "egg noodles in the beef broth with shrimp dumplings and slices of BBQ roast pork",
+    "word_count": 21
+  },
+  {
+    "id": 1063,
+    "text": "The sushi was awful!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sushi",
+    "word_count": 4
+  },
+  {
+    "id": 1064,
+    "text": "Yet paired with such rude service, would never recommend for anyone interested in carrying any kind of conversation while there.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "word_count": 20
+  },
+  {
+    "id": 1065,
+    "text": "Plain and simple it's bad thai food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "thai food",
+    "word_count": 7
+  },
+  {
+    "id": 1066,
+    "text": "We also had shared a house salad that was fresh.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "house salad",
+    "word_count": 10
+  },
+  {
+    "id": 1067,
+    "text": "Dessert - can't be missed, so save room!!!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Dessert",
+    "word_count": 8
+  },
+  {
+    "id": 1068,
+    "text": "The dinner was ok, nothing I would have again.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dinner",
+    "word_count": 9
+  },
+  {
+    "id": 1069,
+    "text": "people are rude bit again it's new york!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "people",
+    "word_count": 8
+  },
+  {
+    "id": 1070,
+    "text": "Saturday, Nov. 6th I had a group from work come in with about 35 people and the staff was amazing to accomodate us.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "word_count": 23
+  },
+  {
+    "id": 1071,
+    "text": "But the thai is definitely not great -- bland and indistinguished.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "thai",
+    "word_count": 11
+  },
+  {
+    "id": 1072,
+    "text": "Great staff.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "word_count": 2
+  },
+  {
+    "id": 1073,
+    "text": "He offers subpar service and has no personality.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "word_count": 8
+  },
+  {
+    "id": 1074,
+    "text": "The pizza here is delicious.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pizza",
+    "word_count": 5
+  },
+  {
+    "id": 1075,
+    "text": "The best thing I tasted were the lambchops.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "lambchops",
+    "word_count": 8
+  },
+  {
+    "id": 1076,
+    "text": "It's a nice place to relax and have conversation.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "place",
+    "word_count": 9
+  },
+  {
+    "id": 1077,
+    "text": "great eats, good times.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "eats",
+    "word_count": 4
+  },
+  {
+    "id": 1078,
+    "text": "Consistently good Japanese Tapas.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Japanese Tapas",
+    "word_count": 4
+  },
+  {
+    "id": 1079,
+    "text": "The well mannered, pleasant staff that Tony has in his employ.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "word_count": 11
+  },
+  {
+    "id": 1080,
+    "text": "The service was superb, they treat you like family.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "service",
+    "word_count": 9
+  }
+]

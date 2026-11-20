@@ -1,0 +1,1682 @@
+[
+  {
+    "id": 1,
+    "text": "What an amazing meal and experience!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "meal",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"meal\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "meal"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 2,
+    "text": "The worst excuse for Japanese food I've ever encountered.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Japanese food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"Japanese food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "Japanese food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 3,
+    "text": "Unfortunately, the food was NOT something to get worked up about.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 4,
+    "text": "honestly the worst sushi my husband and i had in our entire lives.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sushi",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"sushi\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "sushi"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 5,
+    "text": "The only problem is that the manager is a complete incompetent.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "manager",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"manager\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "manager"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 6,
+    "text": "The bagels are fabulous.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "bagels",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"bagels\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "bagels"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 7,
+    "text": "The sauces used are also not that exciting.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sauces",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"sauces\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "sauces"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 8,
+    "text": "They came out over cooked and the cheese was almost non existant.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "cheese",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"cheese\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "cheese"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 9,
+    "text": "Made my dining experience uncomfortable.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dining experience",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"dining experience\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "dining experience"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 10,
+    "text": "Zero ambiance to boot.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "ambiance",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"ambiance\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "ambiance"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 11,
+    "text": "The wine list is interesting and has many good values.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "wine list",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"wine list\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "wine list"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 12,
+    "text": "As for the bar, this is another bad idea.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bar",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"bar\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "bar"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 13,
+    "text": "The menu is nothing like the one on the website.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "menu",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"menu\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "menu"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 14,
+    "text": "You get the sense that the people there care about their restaurant and about your experience and that is very nice.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "people",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"restaurant\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "restaurant"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 15,
+    "text": "I would highly recommand requesting a table by the window.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "table by the window",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"table by the window\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "table by the window"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 16,
+    "text": "I do not recommend lunch specials just because it tasts the same with other regular chinese restaurant.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "lunch specials",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"lunch specials\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "lunch specials"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 17,
+    "text": "Not impressed with the food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 18,
+    "text": "Their calzones are horrific, bad, vomit-inducing, YUCK.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "calzones",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"calzones\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "calzones"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 19,
+    "text": "Sure, the setting is nice.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "setting",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"setting\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "setting"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 20,
+    "text": "The service is awful.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 21,
+    "text": "Wonderful strawberry daiquiries as well!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "strawberry daiquiries",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"strawberry daiquiri\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "strawberry daiquiri"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 22,
+    "text": "The counter service is bad.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "counter service",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"counter service\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "counter service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 23,
+    "text": "The waitress, seems to be more concerned of looking good than actually waitressing.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waitress",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"waitress\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "waitress"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 24,
+    "text": "The people in the restaurant were pretty obnoxious and loud.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "people",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"people\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "people"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 25,
+    "text": "I was very impressed by this low-key upper eastsider and their authentically thai cuisine!!!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "thai cuisine",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"thai cuisine\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "thai cuisine"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 26,
+    "text": "We took advanatage of the half price sushi deal on saturday so it was well worth it.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "half price sushi deal",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"sushi\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "sushi"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 27,
+    "text": "My steak au poivre was one of the worst I've had.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "steak au poivre",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"steak au poivre\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "steak au poivre"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 28,
+    "text": "The food was absolutely horrible!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 29,
+    "text": "Killer Sushi!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Sushi",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"sushi\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "sushi"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 30,
+    "text": "The food was bland oily.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 31,
+    "text": "Prices are very good.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Prices",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"prices\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "prices"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 32,
+    "text": "Service was also very good.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Service",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 33,
+    "text": "They are the best bagels I've had.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "bagels",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"bagels\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "bagels"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 34,
+    "text": "The dim sum however was very good.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "dim sum",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"dim sum\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "dim sum"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 35,
+    "text": "They couldn't even make a salad that was appealing.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "salad",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"salad\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "salad"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 36,
+    "text": "We had crawfish boiled and despite making a mess, it was a ton of fun and quite tasty as well.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "crawfish boiled",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"crawfish boiled\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "crawfish boiled"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 37,
+    "text": "The food was actually aweful.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 38,
+    "text": "The food was absolutely amazing!!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 39,
+    "text": "There is no excuse for such lousy service!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 40,
+    "text": "The food is above average for midtown and sligtly better than some of the other Heartland Breweries in the city.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 41,
+    "text": "The food's as good as ever.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 42,
+    "text": "Delivery is fast too.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Delivery",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"delivery\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "delivery"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 43,
+    "text": "The food was just awful, ATROCIOUS actually.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 44,
+    "text": "Ambiance- relaxed and stylish.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Ambiance",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"ambiance\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "ambiance"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 45,
+    "text": "Both times I was extremely dissappointed by the service, which was boarderline rude.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 46,
+    "text": "My chow fun and chow see was really bland and oily.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "chow fun and chow see",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"chow fun and chow see\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "chow fun and chow see"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 47,
+    "text": "We were worried we would have trouble getting in, but somehow managed to have a short wait.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "wait",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"wait\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "wait"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 48,
+    "text": "Even the pasta is delicious here (a rarity in New York pizza restaurants).",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pasta",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"pasta\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "pasta"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 49,
+    "text": "My friend's food was also the complete opposite of what it's supposed to taste like (aND look like).",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 50,
+    "text": "The staff ignored my friends and I the entire time we were there.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "staff",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"staff\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "staff"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 51,
+    "text": "The pizza was pretty good and huge.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pizza",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"pizza\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "pizza"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 52,
+    "text": "It is so easy to get a reservation at a top place in NYC with a week's notice.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "reservation",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"reservation\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "reservation"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 53,
+    "text": "Reasonable prices.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "prices",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"prices\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "prices"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 54,
+    "text": "A bit breezy up there on the mezzanine from the wind coming from the tracks.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "mezzanine",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"mezzanine\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "mezzanine"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 55,
+    "text": "The soup is pretty good too.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "soup",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"soup\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "soup"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 56,
+    "text": "The wine list is extensive and impressive.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "wine list",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"wine list\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "wine list"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 57,
+    "text": "The crispy chicken wasn't for us, though.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "crispy chicken",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"chicken\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "chicken"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 58,
+    "text": "The Thai food is good.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Thai food",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"Thai food\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "Thai food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 59,
+    "text": "His drinks are very inventive, delicious and classy.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "drinks",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"drinks\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "drinks"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 60,
+    "text": "Quite frankly, this is some of the worst sushi I have ever tried.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sushi",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"sushi\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "sushi"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 61,
+    "text": "however, it's the service that leaves a bad taste in my mouth.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 62,
+    "text": "But the pizza is way to expensive.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "pizza",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"pizza\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "pizza"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 63,
+    "text": "we decided to eat in tea room which was small and cute.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "tea room",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"tea room\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "tea room"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 64,
+    "text": "I have had so many dinners here and it's always been perfect - on a date with my husband, with my mom, with girlfriends and larger groups.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "dinners",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"diners\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "diners"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 65,
+    "text": "The dinner menu is diverse and top-notch as well.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "dinner menu",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"dinner menu\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "dinner menu"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 66,
+    "text": "The atmosphere is much better than Sripraphai (more modern and sleek).",
+    "gold_sentiment": "positive",
+    "gold_aspect": "atmosphere",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"atmosphere\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "atmosphere"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 67,
+    "text": "My co-workers had to wait almost an hour for delivery, only to discover that what they got was not what they ordered.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "delivery",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"delivery\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "delivery"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 68,
+    "text": "She gets 10 for her excellent service and advice.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 69,
+    "text": "Here you get the zen feel without feeling rigid.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "zen feel",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"zen feel\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "zen feel"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 70,
+    "text": "Service has always been friendly and efficient.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Service",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 71,
+    "text": "Two words: Free wine.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "wine",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"Free wine\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "Free wine"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 72,
+    "text": "This dish is my favorite and I always get it when I go there and never get tired of it.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "dish",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"dish\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "dish"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 73,
+    "text": "With the great variety on the menu , I eat here often and never get bored .",
+    "gold_sentiment": "positive",
+    "gold_aspect": "menu",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"menu\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "menu"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 74,
+    "text": "Please try the Filet Mignon, its just the most tender piece ever.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Filet Mignon",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"Filet Mignon\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "Filet Mignon"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 75,
+    "text": "All the desserts the group tried got favorable reviews.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "desserts",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"desserts\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "desserts"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 76,
+    "text": "Well, this place is so Ghetto its not even funny.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"Ghetto\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "Ghetto"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 77,
+    "text": "There is a downside if you're ordering in -- the delivery guys have MAJOR attitude.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "delivery guys",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"delivery guys\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "delivery guys"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 78,
+    "text": "Yeah, sometimes the service can be slow.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 79,
+    "text": "But for whatever reason, prices are about twice as high.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"prices\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "prices"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 80,
+    "text": "The sake menu should not be overlooked!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sake menu",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"sake menu\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "sake menu"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 81,
+    "text": "The decor is really blah, and not at all hip or happening.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "decor",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"decor\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "decor"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 82,
+    "text": "The food is authentic Italian - delicious!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 83,
+    "text": "There was no ambiance.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "ambiance",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"ambiance\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "ambiance"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 84,
+    "text": "This is such a lovely, peaceful place to eat outside.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "place",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"place\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "place"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 85,
+    "text": "I'm partial to the Gnocchi.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Gnocchi",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"Gnocchi\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "Gnocchi"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 86,
+    "text": "We ate at this Thai place following the reviews but very unhappy with the foods.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "foods",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"foods\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "foods"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 87,
+    "text": "We ordered the special, grilled branzino, that was so infused with bone, it was difficult to eat.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "grilled branzino",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"branzino\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "branzino"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 88,
+    "text": "This place has many different styles of pizza and they are all amazing.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "styles of pizza",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"pizza\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "pizza"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 89,
+    "text": "No refills on fountain drinks, though.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "fountain drinks",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"fountain drinks\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "fountain drinks"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 90,
+    "text": "My boyfriend ate tuna and it was cooked perfectly!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "tuna",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"tuna\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "tuna"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 91,
+    "text": "The hostess is rude to the point of being offensive.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "hostess",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"hostess\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "hostess"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 92,
+    "text": "The pizza is overpriced and soggy.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "pizza",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"pizza\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "pizza"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 93,
+    "text": "This place is incredibly tiny.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"place\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "place"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 94,
+    "text": "The food was boring and expensive.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 95,
+    "text": "Our server was very helpful and friendly.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "server",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"server\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "server"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 96,
+    "text": "The only fallback on this restaurant is the prices.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"prices\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "prices"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 97,
+    "text": "The lamb meat was under-cooked and EXTRMELY CHEWY.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "lamb meat",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"lamb meat\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "lamb meat"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 98,
+    "text": "The kitchen however, is almost always slow.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "kitchen",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"kitchen\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "kitchen"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 99,
+    "text": "The Thali was small, thoroughly unremarkable, and $14.95.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Thali",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"thali\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "thali"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 100,
+    "text": "Service- friendly and attentive.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Service",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 101,
+    "text": "I can't wait for summer, when they serve outside on their gigantic patio.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "patio",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"patio\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "patio"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 102,
+    "text": "The sides were ok and incredibly salty.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sides",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"sides\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "sides"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 103,
+    "text": "We were seated and ignored by waitstaff.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waitstaff",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"waitstaff\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "waitstaff"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 104,
+    "text": "I cannot imagine a friendlier staff working in a restaurant.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"staff\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "staff"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 105,
+    "text": "Service was very good and warm.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Service",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 106,
+    "text": "It was like the servers forgot that they actually worked there and instead wanted to hang out and be cool.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "servers",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"servers\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "servers"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 107,
+    "text": "The prices were fantastic.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "prices",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"prices\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "prices"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 108,
+    "text": "They were such a rip-off ($8.95 for four small meat patties in steamed buns) and not worth trying.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "meat patties in steamed buns",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"meat patties\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "meat patties"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 109,
+    "text": "The overall price tag was very very expensive, something I did expect.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "price tag",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"price tag\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "price tag"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 110,
+    "text": "But the staff was so horrible to us.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "staff",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"staff\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "staff"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 111,
+    "text": "We had Pam's special fried fish and it was amazing.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Pam's special fried fish",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"fried fish\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "fried fish"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 112,
+    "text": "The noise level was unbearable, conversation impossible.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "noise level",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"noise level\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "noise level"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 113,
+    "text": "The lunch special is an asbolute steal.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "lunch special",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"lunch special\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "lunch special"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 114,
+    "text": "We had the most wonderful waitress.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "waitress",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"waitress\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "waitress"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 115,
+    "text": "The price very reasonable.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "price",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"price\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "price"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 116,
+    "text": "Food is great and inexpensive.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Food",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"food\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "food"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": false
+  },
+  {
+    "id": 117,
+    "text": "The most annoying thing, though, is the fact that the servers seem to be trained to drive revenue.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "servers",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"servers\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "servers"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 118,
+    "text": "The service is fantastic.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "service",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"service\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "service"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 119,
+    "text": "I had the black cod with yuzu sauce, which was wonderful.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "black cod with yuzu sauce",
+    "raw_response": "{\n  \"sentiment\": \"positive\",\n  \"aspect\": \"black cod with yuzu sauce\"\n}",
+    "parsed_response": {
+      "sentiment": "positive",
+      "aspect": "black cod with yuzu sauce"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  },
+  {
+    "id": 120,
+    "text": "The bartender on my most recent visit was so incredibly rude that I will never go back.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bartender",
+    "raw_response": "{\n  \"sentiment\": \"negative\",\n  \"aspect\": \"bartender\"\n}",
+    "parsed_response": {
+      "sentiment": "negative",
+      "aspect": "bartender"
+    },
+    "first_try_success": true,
+    "valid_schema": true,
+    "aspect_in_text": true
+  }
+]

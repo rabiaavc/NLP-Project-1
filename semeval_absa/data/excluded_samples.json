@@ -1,0 +1,1192 @@
+[
+  {
+    "text": "head and shoulders above its neighboors on east 6 st, taj mahal is also very comparable, in food quality, to the much overpraised (and underdeserving) baluchi's.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food quality",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "This is a cute place and could be good but they need to get their act together.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "place",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "If you go to Roth's try to be served by Mike, he is GREAT!!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "served",
+    "reason": "bad_aspect",
+    "reason_description": "Aspect term is a verb, misspelled or not meaningful"
+  },
+  {
+    "text": "Joe's Pizza used to have the best slice until this pizzeria opened up.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "slice",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Nice restaurant overall, with classic upscale Italian decor.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Italian decor",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "It is set far from the small street it's on, and there is no traffic noise.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "traffic noise",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "For authentic Thai food, look no further than Toons.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Thai food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "We were a group of 8 and well seved.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "seved",
+    "reason": "bad_aspect",
+    "reason_description": "Aspect term is a verb, misspelled or not meaningful"
+  },
+  {
+    "text": "Great place to grab a hot bagel on the way to work.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "hot bagel",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "The production is a symphony, alot of fun to experience.The food sublime for the most part.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "Total hipster-wannabe attitude in an otherwise sweet spot.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "spot",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "The takeout is great too since they give high quality tupperware as well.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "takeout",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Frankly, when you compare what you can have here for lunch, versus McDs or so many other sandwich shops in the city, there is no comparison.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "lunch",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "They showed up 15 minutes after the tuna melt.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "tuna",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "Coming from Boston this place is like Emma's Pizza in Kendall Square in Cambridge (although they have more funky toppings!)",
+    "gold_sentiment": "positive",
+    "gold_aspect": "toppings",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Seriously, this is the best all you can eat in town- As everyone says, the Spicy Tuna hand rolls are the best- have 4 of these, and you've broken even.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Spicy Tuna hand rolls",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "All in all, this midtown gem instantly became one of my favorite sushi restaurants in the city.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sushi",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "The servers give you some sample slices of your order while you wait (shortly I might add).",
+    "gold_sentiment": "positive",
+    "gold_aspect": "servers",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Get the tuna of gari.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "tuna",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "fine dining restaurant quality.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "quality",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "This place is always very crowded and popular.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "place",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "The only positive was the wait staff, which was prompt, knowledgable, and likeable.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "wait staff",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "I recommend this place to everyone who asks me where to go for a good meal.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "meal",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "So all I'm trying to say is this restaurant is by far the best thai food restaurant I've ever been to.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "thai food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "I had a huge pastrami sandwich on a roll.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pastrami sandwich",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I've rarely had a problem with slow staff in the 10 years I've been going.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "staff",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Outstanding Bagels, but you get what you pay for.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Bagels",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "Try green curry with vegetables.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "green curry with vegetables",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I love and I know gourmet food by excellence!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "gourmet food",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "I started out with a Bombay beer which was big enough for two.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Bombay beer",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The restaurant is rather small but we were lucky to get a table quickly.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "table",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "If you live in Upper Manhattan, Siam Square is THE place for Thia food.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Thia food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "I will recommend Scopa to all of my friends for a place to go for wonderful Italian food.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Italian food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Admittedly some nights inside the restaurant were rather warm, but the open kitchen is part of the charm.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "open kitchen",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "This place is a great stop for great food.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Top spot in town for Vietnamese classics, better than places that cost a lot more.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Vietnamese classics",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Indoor was very cozy and cute.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Indoor",
+    "reason": "bad_aspect",
+    "reason_description": "Aspect term is a verb, misspelled or not meaningful"
+  },
+  {
+    "text": "If the weather is nice, try to snag an outside table.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "table",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "My friend got the mushroom pizza which tasted better.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "mushroom pizza",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "They do cater to American palates, but if you like it hot let them know and they are more than willing to oblige!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "cater",
+    "reason": "bad_aspect",
+    "reason_description": "Aspect term is a verb, misspelled or not meaningful"
+  },
+  {
+    "text": "Lucky Strike is a great casual place to just grab a bite to eat.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "place",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "We even had a visit from the Manager who wanted to make sure we were enjoying ourselves.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Manager",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Nothing better than buying a snapple for $3.25 too.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "snapple",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "If you'd like to have a nice light meal with an asian accent, Long Tan is a good place on the slope.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "meal",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "at night, but it's hard to hear your own conversation with everyone else competing for that same luxury - the music playing in the background is also voluminous.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "music",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "Drinks got screwed up, she acted put upon.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Drinks",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "If you're not familiar with the cuisine, you may encounter problems ordering here and be sure to bring plenty of cash with you as they don't accept credit cards.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "cuisine",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "You order from a menu, so you leave feeling like you missed the full experience.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "menu",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Someone else recommended the dessert - we also left that.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dessert",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I don't know who they think they are but they have no respect for the residents of the neighborhood ever since they opened their cabaret next door and blasts loud music till three in the morning every weekend during the summer.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "music",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "I like Cafe Noir dont get me wrong, it is jsut that the people who work there are evil and incompetent!!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "people",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "Here's to the fake fish tanks too...",
+    "gold_sentiment": "negative",
+    "gold_aspect": "fish tanks",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "Told us to sit anywhere, and when we sat he said the table was reserved.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "table",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "After dealing with subpar pizza all over the Kensington neighborhood - I've found little toninos.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "pizza",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "Always popular, always full, always a wait.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "wait",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "Could be pricey without a prix fixe meal.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prix fixe meal",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "It is obvious that no one in the restaurant has any idea about or experience with Japanese cuisine.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Japanese cuisine",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "They charge $6.00 for rice.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "rice",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "For the quality of food, a little too expensive.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "quality of food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "My first time there I happened not to like the Crab Croquette apt that i ordered and they were happy to change it for me without making no big deal.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Crab Croquette apt",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "After being told that our party of three would be seated in 10 minutes and watching other parties (multiples of 2 and higher) seated for 40 minutes, the three of us were squished into a small 2-person table.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "2-person table",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Oh, but wait, we were out of drinks (which were also delightfully overpriced).",
+    "gold_sentiment": "negative",
+    "gold_aspect": "drinks",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "Prices too high for this cramped and unappealing resturant.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Prices",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "i would just ask for no oil next time.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "oil",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "If you want good authentic Thai this place is not the place to go.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Thai",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "There are other people waiting!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waiting",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "Last memorial day, I tried to make reservations but was told they were closed that weekend (interesting, but...).",
+    "gold_sentiment": "negative",
+    "gold_aspect": "reservations",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The only possible drawback to this last point is that as of the date of this posting, the additional menu items are only written in Chinese.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "menu items",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "They pray to their Food Gods to make them into a good pizza like VT's.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "pizza",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "Behind this counter, two men are squeezed in.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "counter",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "Good luck getting a table.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "getting a table",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "I was really disappointed ant wanted to tell everyone not to go eat or even take out food from there.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Tell them Herky sent you and get a free confused look from the waiter.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waiter",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "Not the greatest sushi place, but excellent for a $19.95 all you can eat.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "sushi place",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "As there were so many to choose from we wandered up and down the street looking in the windows and such noticicing many empty seats ,except at Taj Mahal.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "seats",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "This place is not worth the prices.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "From the moment we walked in they were more than accomodating even though the place was packed.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "Why do people rave about the ambience.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "ambience",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Too bad the food wasn't of the same heritage.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "now if they could only get a toaster.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "toaster",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Faan's got a great concept but a little rough on the delivery.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "delivery",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "would have rather tried terrace in the sky or water club for that price",
+    "gold_sentiment": "negative",
+    "gold_aspect": "price",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The service is ok but could be better.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "I must say it's a little pricey for the food because it was not as spectacular as the view.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "The svc can be a bit rude at times, esp if you have big group, but overall the restaurant is a must!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "svc",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "The entire place and the treatment we received felt as a conveyor belt.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Compared to Ess-a, Tal offers a less doughy bagel!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bagel",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "Very excited to hear that short-term Chef Jason Narone has moved on, he truly was a low point of their Sterling track record.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Chef",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "It looked like shredded cheese partly done - still in strips.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "shredded cheese",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "still stay away, the table next to us walked out after my table and aanother were serves eventhough they were there much longer...",
+    "gold_sentiment": "negative",
+    "gold_aspect": "serves",
+    "reason": "bad_aspect",
+    "reason_description": "Aspect term is a verb, misspelled or not meaningful"
+  },
+  {
+    "text": "I go back in line like three times on average until I can't walk anymore.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "line",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "I went here with a friend on a whim, we went someplace else first and couldn't get a table.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "table",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Really though, where's the seasoning?",
+    "gold_sentiment": "negative",
+    "gold_aspect": "seasoning",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Overall, not worth the money.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "money",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "You have to increase the service a lot.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "First of all, this place is *not* romantic, as claimed by Citysearch's editorial review.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "It appears to be the owner's first venture and it shows.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "owner",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The last time I went we were seated at a table in a corridor next to the kitchen.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "table",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Kind of a small place but I guess if they are not too busy might be able to fit a group or kids.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "Don't eat here unless you're starving for thai food and you work next door.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "thai food",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I would highly recommend this place to anyone who is looking for a fine Indian dining experience that is definitely a value for your dollar.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Indian dining experience",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Good to find a restaurant where the owners have some imagination and they have actually pulled it off, like in this case.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "owners",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "While we thoroughly enjoyed the food, it was annoying to scream across the table for conversation.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "food",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "He has visited Thailand and is quite expert on the cuisine.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "cuisine",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "Even after getting pushed out by the no-class Famous Ray's, Sal has risen again to carry on his father's uncle's legacies with a smile, true love for his community, and let's not forget the Outstanding Pizza!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Pizza",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "All the NYU students love this place so it makes for a fun young atmosphere.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "atmosphere",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Ballato's is consistently delicious authentic italian food.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "italian food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Food was very good, but not what I would consider out of this world.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Food",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "I do suggest to ask to be seated upstairs if you are looking to be a little cozy.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "upstairs",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I am reluctant to write because I would not want my jem of a pizza place to become overcrowded.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "pizza",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Make sure you have the Spicy Scallop roll.. .",
+    "gold_sentiment": "positive",
+    "gold_aspect": "Spicy Scallop roll",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "This big draw is the all you can sushi here for $19.95!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sushi",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Try the sea bass.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sea bass",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "But after last night, Spice Grill is the only place I'm eating indian cuisine.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "indian cuisine",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Try sushimi cucumber roll.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "sushimi cucumber roll",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Toons has recently been redone, so it's now a very attractive space.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "space",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "If presentation and service is your thing, then this magic show works.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "service",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Not a typical pizza joint, but good for a low key and fairly cheap nice sit down dinner.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "dinner",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "I was in love with Pongsri on 48th, but compared to Suan it is slow in service and overpriced.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Slightly above average wines start at $70+ with only one selection listed at $30+.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "wines",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Drawbacks: service is slow and they don't toast!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Yeah Shanghai is also great but not quite as good -- they use the same amount of salt but without sweetness to balance out.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "salt",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Priced at upper intermediate range.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Priced",
+    "reason": "bad_aspect",
+    "reason_description": "Aspect term is a verb, misspelled or not meaningful"
+  },
+  {
+    "text": "Please if your thinking about it go, and stay the wait you won't be disappointed.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "wait",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "We were told that they were booked solid and no other table was available.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "table",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "It won't break the bank but I also wouldnt come back for the food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "The restaurant is dark and not very attractive and then you have spot lights shining on you putting you in the worst light possible, reaching for sunglasses.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "spot lights",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "like saying her bread comes from a special bakery when we have seen her buying it dowtown manhathan.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bread",
+    "reason": "incomplete",
+    "reason_description": "Text is incomplete or not understandable on its own"
+  },
+  {
+    "text": "But they don't have a toaster, which is strange.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "toaster",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I wasn't thrilled to have to wait on line for thirty minutes, but I guess that's the price you pay for a popular place.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "wait",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "Overall a disappointing experience for that price category.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "price",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "He was terribly thirsty after the meal too.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "meal",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Overall A oh ya even though there is waiting it is deff worth it",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waiting",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "They didn't give us the dinner special until we asked for it.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dinner special",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Dinner took almost 4 hours without any lag time.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Dinner",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Why make a reservation if you aren't going to keep it?",
+    "gold_sentiment": "negative",
+    "gold_aspect": "reservation",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "There are much better places in NY with better prices.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I've been to several places for Dim Sum and this has got to be the WORST.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Dim Sum",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "They are not helpful in the least and will give you the grand run around so by the time the event date rolls around you will not only regret chosing this place, but also become hostile!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The service was a bit slow, but they were very friendly.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "Other than the crappy service from two individuals, it's great.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "The photos of the restaurant in its web site are way better than the real look.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "look",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "It was nice and fresh, but I can't give it high scores on being authentic thai.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "thai",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "What I didn't like was how the food came right after it was ordered.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Note that they do not serve beer, you must bring your own.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "beer",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "One should not go to Lucky Strike for the food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Wouldn't recomend it for dinner!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dinner",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Worse of all, $60 was erroneously added to our $80 bill.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bill",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Had we been stalling I could understand where they were coming from, but we had been there less than an hour and they hadn't even brought us a check yet!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "check",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "We saw them heating up at least one frozen item though I'm not sure which dim sum dish it was.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dim sum dish",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "After all that, they complained to me about the small tip.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "tip",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Just stick with the small dishes!",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dishes",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "I would recommend Roxy's for that, but not for their food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "You should pass on the calamari.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "calamari",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "Until you realize that their five minutes is meaningless and your wait may be anywhere from two to twenty minutes it may be frustrating.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "wait",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "They charge different prices all the time.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "prices",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "We had reservations at 9pm, but was not seated until 10:15pm.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "reservations",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The seating was if they were trying to get the maximum amount of people into the restaurant, so be nice to your neighbor when you dine here.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "seating",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "skip dessert.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "dessert",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The whole set up is truly unprofessional and I wish Cafe Noir would get some good staff, because despite the current one this is a great place.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "staff",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "The menu may be small, but everything on it is delicious.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "menu",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "I've lived in NYC all my life and had never before seen so many waterbugs in one place (except in a really bad dream).",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waterbugs",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "I won't go back unless someone else is footing the bill.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bill",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "The $300 bill was a bit steep, but the experience was great.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "bill",
+    "reason": "mixed",
+    "reason_description": "Sentence contains contrasting sentiment"
+  },
+  {
+    "text": "DO not try unless you're just going there to hang out like the rest of the hipsters who apparently have no sense of taste.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "taste",
+    "reason": "sarcasm",
+    "reason_description": "Sentiment is sarcastic or ironic"
+  },
+  {
+    "text": "The place was real empty but that was because this was the first Sunday they ever opened.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "place",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  },
+  {
+    "text": "This place is really trendi but they have forgotten about the most important part of a  restaurant, the food.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "Do not get the Go Go Hamburgers, no matter what the reviews say.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Go Go Hamburgers",
+    "reason": "implicit",
+    "reason_description": "Sentiment is implicit or depends on outside context"
+  },
+  {
+    "text": "We won't go to this place again for a good meal.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "meal",
+    "reason": "multi_target",
+    "reason_description": "Another evaluated target (e.g. the restaurant/place or another entity) is present"
+  },
+  {
+    "text": "For many people, this may not seem like Aunthentic Thai food because most places in NYC arent quite authentic.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "Thai food",
+    "reason": "label_mismatch",
+    "reason_description": "Overall tone of the sentence does not match the label"
+  }
+]
