@@ -1,0 +1,13 @@
+Kalan havuz (elenmemiş, test/dev dışı): {'positive': 437, 'negative': 6}
+Eğitim havuzu (dev + 141 elenen cümle eklendi): {'positive': 528, 'negative': 136} | test ile ortak cümle yok
+
+ train                   BoW + LR               TF-IDF + LR
+    10 0.528 (min 0.492, max 0.575)0.554 (min 0.483, max 0.617)
+    20 0.552 (min 0.450, max 0.633)0.565 (min 0.475, max 0.642)
+    50 0.597 (min 0.517, max 0.675)0.585 (min 0.517, max 0.667)
+   100 0.611 (min 0.558, max 0.667)0.633 (min 0.592, max 0.683)
+   200 0.654 (min 0.567, max 0.708)0.647 (min 0.583, max 0.725)
+   272 0.633 (min 0.633, max 0.633)0.642 (min 0.642, max 0.642)
+
+TF-IDF + LR, 272 örnek: eğitim 5 ms, tahmin 0.008 ms/örnek (LLM: 700-1900 ms/örnek)
+saved results/learning_curve_tfidf.png

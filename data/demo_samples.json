@@ -1,0 +1,34 @@
+[
+  {
+    "id": 3,
+    "text": "Unfortunately, the food was NOT something to get worked up about.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "food",
+    "word_count": 11,
+    "note": "negation in capitals (NOT)"
+  },
+  {
+    "id": 21,
+    "text": "Wonderful strawberry daiquiries as well!",
+    "gold_sentiment": "positive",
+    "gold_aspect": "strawberry daiquiries",
+    "word_count": 5,
+    "note": "final model changes the aspect spelling (grounding error)"
+  },
+  {
+    "id": 53,
+    "text": "Reasonable prices.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "prices",
+    "word_count": 2,
+    "note": "very short sentence; v2 flipped to negative at temperature 1.0"
+  },
+  {
+    "id": 65,
+    "text": "The dinner menu is diverse and top-notch as well.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "dinner menu",
+    "word_count": 9,
+    "note": "multi-word aspect"
+  }
+]
