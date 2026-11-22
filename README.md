@@ -1,194 +1,198 @@
 # Sentiment Classification + Aspect Extraction (SemEval-2014 Restaurants)
 
-Yerel bir LLM (Qwen3 1.7B, Ollama) ile İngilizce restoran yorumlarından **yapılandırılmış JSON** üreten bir sistem. Model her yorum için iki iş yapar:
+A system that uses a **local LLM** (Qwen3 1.7B via Ollama) to generate **structured JSON** from English restaurant reviews. For each review, the model performs two tasks:
 
-- **Sınıflandırma (classification):** Yorumun değerlendirilen şeye yönelik duygusu: `positive` veya `negative`
-- **Bilgi çıkarma (information extraction):** Değerlendirilen şeyin kendisi (aspect), metinden birebir kopyalanarak
+- **Classification:** Determine whether the sentiment toward the evaluated target is `positive` or `negative`.
+- **Information extraction:** Identify the evaluated target (the *aspect*) by copying its exact span from the review.
 
-```
+```text
 "The pizza was delicious."  →  {"sentiment": "positive", "aspect": "pizza"}
 ```
 
-Nihai sistem JSON'a kısa bir gerekçe alanı da ekler (bkz. [Nihai sistem](#nihai-sistem)).
+The final system also includes a short reasoning field in the JSON output (see [Final system](#final-system)).
 
-## Sonuçlar (test seti, 120 örnek)
+## Results (120 test samples)
 
-| Sistem | Ayar | Ham JSON (`json.loads`) | Temizleme sonrası | Sentiment accuracy | Aspect exact match | Joint accuracy | Süre / örnek |
+| System | Setting | Raw JSON (`json.loads`) | After cleaning | Sentiment accuracy | Aspect exact match | Joint accuracy | Time / sample |
 |---|---|---|---|---|---|---|---|
-| v2 (başlangıç) | prompt-only | %100 | %100 | %94,2 | %90,0 | %84,2 | 0,72 sn |
-| **v4 Reason (nihai)** | JSON şeması | **%100** | **%100** | **%99,2** | **%93,3** | **%92,5** | 1,40 sn |
-| v4 Reason | prompt-only | %100 | %100 | %99,2 | %93,3 | %92,5 | 1,63 sn |
-| v5 CoT (önce metin, sonra JSON) | prompt-only | **%0** | %100 | %99,2 | %92,5 | %91,7 | 1,89 sn |
+| v2 (initial) | Prompt-only | 100% | 100% | 94.2% | 90.0% | 84.2% | 0.72 s |
+| **v4 Reason (final)** | JSON schema | **100%** | **100%** | **99.2%** | **93.3%** | **92.5%** | 1.40 s |
+| v4 Reason | Prompt-only | 100% | 100% | 99.2% | 93.3% | 92.5% | 1.63 s |
+| v5 CoT (reasoning before JSON) | Prompt-only | **0%** | 100% | 99.2% | 92.5% | 91.7% | 1.89 s |
 
-*Joint accuracy:* sentiment ve aspect'in ikisinin birden doğru olduğu örneklerin oranı. Bütün deneylerin ayrıntılı sonuçları ve grafikleri [analysis.ipynb](analysis.ipynb) içindedir.
+*Joint accuracy* is the percentage of samples for which both the sentiment and aspect predictions are correct. Detailed results and plots for all experiments are provided in [analysis.ipynb](analysis.ipynb).
 
-## Prompt-only ve şema kısıtlı çıktı karşılaştırması
+## Prompt-only vs. schema-constrained decoding
 
-Ödevin iki ayarı: **prompt-only** (JSON yalnızca prompt'ta istenir, Ollama `format` parametresi kullanılmaz) ve **şema kısıtlı** (`format` ile JSON şeması verilir).
+The assignment requires two settings:
 
-| Sistem | Ayar | Ham JSON | Temizleme sonrası | Şema geçerliliği | Sentiment | Aspect exact |
+- **Prompt-only:** The prompt requests JSON output, but the Ollama `format` parameter is not used.
+- **Schema-constrained:** A JSON schema is supplied through the Ollama `format` parameter.
+
+| System | Setting | Raw JSON | After cleaning | Schema validity | Sentiment | Aspect exact |
 |---|---|---|---|---|---|---|
-| v2 (ayrıntılı prompt) | prompt-only | %100 | %100 | %100 | 0,942 | 0,900 |
-| v2 | şema | %100 | %100 | %100 | 0,942 | 0,900 |
-| v4 Reason | prompt-only | %100 | %100 | %100 | 0,992 | 0,933 |
-| v4 Reason | şema | %100 | %100 | %100 | 0,992 | 0,933 |
-| weak (3 satırlık prompt) | prompt-only | **%35** | %100 | %100 | 0,992 | 0,525 |
-| weak | şema | %100 | %100 | %100 | 0,992 | 0,525 |
+| v2 (detailed prompt) | Prompt-only | 100% | 100% | 100% | 0.942 | 0.900 |
+| v2 | Schema | 100% | 100% | 100% | 0.942 | 0.900 |
+| v4 Reason | Prompt-only | 100% | 100% | 100% | 0.992 | 0.933 |
+| v4 Reason | Schema | 100% | 100% | 100% | 0.992 | 0.933 |
+| weak (three-line prompt) | Prompt-only | **35%** | 100% | 100% | 0.992 | 0.525 |
+| weak | Schema | 100% | 100% | 100% | 0.992 | 0.525 |
 
-- **Ayrıntılı prompt'ta** (`v2`, `v4_reason`) iki ayarın 120 çıktısı da birebir aynı. Model zaten temiz JSON üretiyor, şema yalnızca format garantisi ekliyor.
-- **Kısa prompt'ta** (`weak`) model çıktıyı çoğunlukla ` ```json ` ile sarıyor: 120 çıktının 78'i (%65) temizleme aşamasında kurtarıldı, 42'si doğrudan geçerliydi. Şema bu sorunu ortadan kaldırıyor.
-- **Doğruluk:** Şema, görev doğruluğunu değiştirmiyor (weak'te de aynı). Şema yalnızca geçersiz token'ları yasaklar, model zaten aynı token'ları seçtiği için içerik değişmez.
+- **Detailed prompts (`v2`, `v4_reason`):** All 120 raw outputs were identical between the two settings. The model already produced clean JSON, so the schema added structural constraints without changing the predictions.
+- **Weak prompt (`weak`):** The model frequently wrapped its responses in Markdown JSON code fences. Of the 120 outputs, 78 (65%) were recovered during cleaning, while 42 were directly parseable. Schema-constrained decoding eliminated this formatting issue.
+- **Task accuracy:** Using a schema did not change task accuracy in these comparisons, including with the weak prompt. The constraint excludes invalid output tokens, but in these experiments it did not change the model's chosen content.
 
-## Veri seti ve gold etiketler
+## Dataset and gold labels
 
-Kaynak: [tomaarsen/setfit-absa-semeval-restaurants](https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-restaurants) (SemEval-2014 Task 4, Pontiki ve ark., 2014). Veri setinin test bölümünde etiket bulunmadığı için bütün örnekler **train** bölümünden seçildi.
+**Source:** [tomaarsen/setfit-absa-semeval-restaurants](https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-restaurants) (SemEval-2014 Task 4; Pontiki et al., 2014). The dataset's test split does not include labels, so all samples were selected from its **train** split.
 
-**Gold etiketler** (aspect ifadesi ve duygu) SemEval'in uzman anotasyonundan alındı, elle etiketleme yapılmadı. Elle yapılan iş **örnek seçimidir**.
+The **gold labels** (aspect spans and sentiment labels) come from the original SemEval expert annotations; the labels were not manually created. The manual work involved **selecting samples**, not annotating them.
 
-Seçim adımları ([prepare_data.py](prepare_data.py)):
+Selection procedure ([prepare_data.py](prepare_data.py)):
 
-1. Aynı cümleye ait satırlar gruplandı (birden çok aspect içeren cümleler birden çok satırda tekrarlanıyor).
-2. Yalnızca **tek aspect'li** ve etiketi **positive/negative** olan cümleler alındı (599 positive, 214 negative aday).
-3. Adaylar elle incelendi. 170 cümle elendi: örtük duygu (61), birden çok hedef (45), karışık duygu (27), etiket uyumsuzluğu (14), yarım metin (9), ironi (8), anlamsız aspect (6). Her biri gerekçesiyle [data/excluded_samples.json](data/excluded_samples.json) dosyasında.
-4. Sabit seed (42) ile karıştırılan havuzdan iki ayrı set oluşturuldu:
+1. Group rows belonging to the same sentence; sentences with multiple aspects appear in multiple rows.
+2. Retain only sentences with **one aspect** and a **positive or negative** label (599 positive and 214 negative candidates).
+3. Review candidates manually. Exclude 170 sentences: implicit sentiment (61), multiple targets (45), mixed sentiment (27), label mismatch (14), incomplete text (9), sarcasm (8), and invalid or meaningless aspects (6). Each exclusion and its reason are recorded in [data/excluded_samples.json](data/excluded_samples.json).
+4. Shuffle the pool with a fixed random seed (42) and construct two separate datasets:
 
-| Set | Dosya | Örnek | Kullanım |
+| Split | File | Samples | Purpose |
 |---|---|---|---|
-| Test | `data/absa_120.json` | 60 positive + 60 negative | Deneyler ve nihai sonuç |
-| Dev | `data/absa_dev_80.json` | 40 positive + 40 negative | İyileştirme yöntemlerinin seçimi (test setiyle ortak cümle yok) |
+| Test | `data/absa_120.json` | 60 positive + 60 negative | Experiments and final reported results |
+| Development | `data/absa_dev_80.json` | 40 positive + 40 negative | Selecting improvement methods; no overlapping sentences with the test set |
 
-### Eşleştirme kuralı
+### Matching rules
 
-Aspect karşılaştırması ([evaluate.py](evaluate.py)): metinler `str.lower()` ile küçültülür ve boşluklar tek boşluğa indirilir.
+Aspect comparison in [evaluate.py](evaluate.py) converts strings to lowercase with `str.lower()` and collapses repeated whitespace into a single space.
 
-- **Exact match (ana metrik):** normalize edilmiş iki aspect birebir aynı.
-- **Partial match:** biri diğerini içeriyor (örnek: `pizza` ve `mushroom pizza`).
+- **Exact match (primary metric):** The normalized predicted and gold aspect spans are identical.
+- **Partial match:** One normalized span contains the other (e.g., `pizza` vs. `mushroom pizza`).
 
-Her cümlede tek gold aspect var ve model tek aspect üretiyor. Bu yüzden entity F1 (exact), aspect exact-match oranıyla aynı çıkar. Veri İngilizce olduğu için Türkçe'ye özgü `İ`/`I` dönüşümü gerekmedi.
+Each sentence has one gold aspect, and the model predicts one aspect. Consequently, exact entity F1 equals the aspect exact-match rate in this setting. Since the dataset is in English, Turkish-specific case handling for `İ` and `I` is not required.
 
-## Klasör yapısı
+## Project structure
 
-```
+```text
 .
-├── prepare_data.py          Veri setini indirir, filtreler, test ve dev setlerini oluşturur
-├── model.py                 Ollama API çağrıları (JSON şeması, düşünme modu, parametreler)
-├── parser.py                JSON ayrıştırma: doğrudan → Markdown/<think> temizliği → { } arasını çıkarma
-├── run.py                   Bir modeli veri setindeki bütün örneklerde çalıştırır, sonuçları kaydeder
-├── run_pipeline.py          İki aşamalı yöntem (yalnızca dev seti deneyi için)
-├── evaluate.py              Metrikler ve hata analizi
-├── baseline_tfidf.py        Klasik temel çizgi: BoW / TF-IDF + lojistik regresyon (yalnızca sentiment)
-├── learning_curve_tfidf.py  Klasik temel çizginin öğrenme eğrisi (10-272 etiketli örnek)
-├── exp_prompt_length.py     Few-shot sayısı ve gecikme deneyi
-├── plot_prompt_length.py    Bu deneyin grafiği
-├── exp_tokenization.py      Tokenizer deneyi (Hugging Face tokenizer ve Ollama token sayısı)
-├── analysis.ipynb           Ana deneylerin grafikleri ve yorumları
-├── HANDOFF.md               Oturum notları ve kalan işler
-├── data/                    Test seti, dev seti, elenen örnekler
-├── modelfiles/              Ollama Modelfile'ları (prompt + parametreler)
+├── prepare_data.py          Download and filter data; create test and development sets
+├── model.py                 Ollama API calls, JSON schemas, thinking mode, and parameters
+├── parser.py                JSON parsing: direct → Markdown/<think> cleaning → extract { ... }
+├── run.py                   Run a model on all samples and save predictions
+├── run_pipeline.py          Two-stage approach (development-set experiment only)
+├── evaluate.py              Metrics and error analysis
+├── baseline_tfidf.py        Classical BoW / TF-IDF + logistic regression (sentiment only)
+├── learning_curve_tfidf.py  Classical baseline learning curve (10–272 labeled examples)
+├── exp_prompt_length.py     Few-shot prompt length and latency experiment
+├── plot_prompt_length.py    Plot the prompt-length experiment
+├── exp_tokenization.py      Hugging Face tokenizer and Ollama token-count experiment
+├── demo.py                  Live test demonstration
+├── parser_ablation.py       Parser extraction ablation experiment
+├── analysis.ipynb           Main experimental plots and discussion
+├── data/                    Test, development, live samples, and excluded samples
+├── modelfiles/              Ollama Modelfiles (prompts and generation parameters)
 └── results/
-    ├── test/                Test seti sonuçları (120 örnek)
-    ├── dev/                 Dev seti sonuçları (80 örnek)
-    └── *.txt, *.json, *.png Baseline, öğrenme eğrisi, gecikme ve tokenizer deneylerinin çıktıları
+    ├── test/                Test-set results (120 samples)
+    ├── dev/                 Development-set results (80 samples)
+    └── *.txt, *.json, *.png Baselines, learning curve, latency, and tokenizer results
 ```
 
-## Kurulum
+## Setup
 
-Gereksinimler: Python 3.12, [Ollama](https://ollama.com) (0.40.16 ile test edildi, Apple M4). Bulut API'si kullanılmaz, her şey yerelde çalışır.
+**Requirements:** Python 3.12 and [Ollama](https://ollama.com) (tested with Ollama 0.40.16 on Apple M4). No cloud APIs are used; all inference runs locally.
 
 ```bash
-# Python paketleri (proje kökündeki .venv kullanıldı)
+# Python packages (the project used a .venv in the repository root)
 pip install requests datasets pandas numpy matplotlib ipykernel scikit-learn transformers
 
-# Temel modeller
+# Base models
 ollama pull qwen3:1.7b-q4_K_M
-ollama pull qwen3:1.7b-q8_0     # yalnızca Q8 deneyi için
-ollama pull qwen3:4b            # yalnızca model boyutu deneyi için
-ollama pull gemma3:4b           # yalnızca model boyutu deneyi için
+ollama pull qwen3:1.7b-q8_0     # Only for the Q8 experiment
+ollama pull qwen3:4b            # Only for the model-size experiment
+ollama pull gemma3:4b           # Only for the model-size experiment
 
-# Nihai sistemin modeli (proje kökünden)
+# Create the final system's Ollama model (run from the project root)
 ollama create absa-model-v4-reason -f modelfiles/Modelfile_v4_reason
 ```
 
-Diğer deneylerin modelleri aynı şekilde oluşturulur:
+Other experimental models are created in the same way:
 
-| Ollama modeli | Modelfile | Açıklama |
+| Ollama model | Modelfile | Description |
 |---|---|---|
-| `absa-model-v1` | `Modelfile_v1` | Ayrıntılı prompt, önce sentiment sonra aspect |
-| `absa-model-v2` | `Modelfile_v2` | Ayrıntılı prompt, önce aspect sonra sentiment (ana sistem) |
-| `absa-model-v2-q8` | `Modelfile_v2_q8` | v2, `qwen3:1.7b-q8_0` ile |
-| `absa-model-weak` | `Modelfile_weak` | 3 satırlık kısa prompt (parser stres testi) |
-| `absa-model-v3` | `Modelfile_v3` | Kısa prompt + aspect kuralları |
-| `absa-model-v4-fewshot` | `Modelfile_v4_fewshot` | v2 + 5 örnek |
-| `absa-model-v4-reason` | `Modelfile_v4_reason` | v2 + JSON içinde gerekçe alanı (**nihai**) |
-| `absa-model-v5-cot` | `Modelfile_v5_cot` | v2 + önce serbest metin akıl yürütme, sonra JSON (şemasız) |
-| `absa-stage-aspect` | `Modelfile_stage_aspect` | İki aşamalı yöntemin 1. aşaması |
-| `absa-stage-sentiment` | `Modelfile_stage_sentiment` | İki aşamalı yöntemin 2. aşaması |
-| `absa-model-v2-qwen3-4b`, `absa-model-v4-reason-qwen3-4b` | `Modelfile_v2_qwen3-4b`, `Modelfile_v4_reason_qwen3-4b` | v2 ve v4 Reason, `qwen3:4b` ile |
-| `absa-model-v2-gemma3-4b`, `absa-model-v4-reason-gemma3-4b` | `Modelfile_v2_gemma3-4b`, `Modelfile_v4_reason_gemma3-4b` | v2 ve v4 Reason, `gemma3:4b` ile |
+| `absa-model-v1` | `Modelfile_v1` | Detailed prompt: sentiment before aspect |
+| `absa-model-v2` | `Modelfile_v2` | Detailed prompt: aspect before sentiment (main baseline) |
+| `absa-model-v2-q8` | `Modelfile_v2_q8` | v2 with `qwen3:1.7b-q8_0` |
+| `absa-model-weak` | `Modelfile_weak` | Short three-line prompt (parser stress test) |
+| `absa-model-v3` | `Modelfile_v3` | Short prompt plus aspect extraction rules |
+| `absa-model-v4-fewshot` | `Modelfile_v4_fewshot` | v2 plus five examples |
+| `absa-model-v4-reason` | `Modelfile_v4_reason` | v2 plus a reasoning field inside JSON (**final**) |
+| `absa-model-v5-cot` | `Modelfile_v5_cot` | v2 plus free-text reasoning before JSON (without schema) |
+| `absa-stage-aspect` | `Modelfile_stage_aspect` | Stage 1 of the two-stage approach |
+| `absa-stage-sentiment` | `Modelfile_stage_sentiment` | Stage 2 of the two-stage approach |
+| `absa-model-v2-qwen3-4b`, `absa-model-v4-reason-qwen3-4b` | `Modelfile_v2_qwen3-4b`, `Modelfile_v4_reason_qwen3-4b` | v2 and v4 Reason with `qwen3:4b` |
+| `absa-model-v2-gemma3-4b`, `absa-model-v4-reason-gemma3-4b` | `Modelfile_v2_gemma3-4b`, `Modelfile_v4_reason_gemma3-4b` | v2 and v4 Reason with `gemma3:4b` |
 
-Modelfile'lar hazır bir modeli sistem prompt'u ve parametrelerle yapılandırır. **Hiçbir model eğitilmedi veya ince ayar yapılmadı.**
+Modelfiles configure an existing model with a system prompt and generation parameters. **No model was trained or fine-tuned.**
 
-## Tekrarlanabilirlik
+## Reproducibility
 
-| Parametre | Değer |
+| Parameter | Value |
 |---|---|
-| Model | `qwen3:1.7b-q4_K_M` (Q4_K_M nicemleme, `ollama show` ile doğrulanır) |
-| Ollama sürümü | 0.40.16 |
-| Donanım | Apple M4 |
+| Model | `qwen3:1.7b-q4_K_M` (Q4_K_M quantization, verifiable with `ollama show`) |
+| Ollama version | 0.40.16 |
+| Hardware | Apple M4 |
 | Temperature / seed | 0 / 42 |
-| Context length (`num_ctx`) | 4096 (gecikme deneyinde 8192) |
-| `num_predict` | 128 (çoğu sistem), 256 (v4 Reason), 384 (v5 CoT), 2048 (düşünme modu) |
+| Context length (`num_ctx`) | 4096 (8192 for the latency experiment) |
+| `num_predict` | 128 (most systems), 256 (v4 Reason), 384 (v5 CoT), 2048 (thinking mode) |
 
-Temperature 0'da aynı çalıştırma tekrarlandığında ve `--seed 7` ile çalıştırıldığında 120 örneğin hepsinde ham çıktı birebir aynı çıktı. Bu yalnızca bu makine ve Ollama sürümü için gözlemdir, genel bir garanti değildir.
+With temperature 0, two identical runs produced exactly the same raw outputs for all 120 samples. The same was observed with `--seed 7`. This is an observation for the tested machine and Ollama version, **not a universal guarantee**.
 
-## Çalıştırma
+## Running the experiments
 
-Bütün komutlar proje kökünden çalıştırılır. Ollama açık olmalıdır.
+Run all commands from the repository root with Ollama running.
 
 ```bash
-# 1. Veri setlerini oluştur (data/ klasöründe hazır olduğu için isteğe bağlı)
+# 1. Generate datasets (optional; prepared files are included in data/)
 python prepare_data.py
 
-# 2. Nihai sistemi test setinde çalıştır (şema kısıtlı) ve prompt-only karşılaştırması
+# 2. Run the final system on the test set: schema-constrained and prompt-only
 python run.py absa-model-v4-reason results/test/results_v4_reason.json --schema --reason
 python run.py absa-model-v4-reason results/test/results_v4_reason_noschema.json --reason
 
-# 3. Değerlendir (birden çok sonuç dosyası yan yana karşılaştırılabilir)
+# 3. Evaluate (multiple result files can be compared side by side)
 python evaluate.py results/test/results_v2_schema.json results/test/results_v4_reason.json
 
-# 4. Önce akıl yürütme, sonra JSON (şemasız)
+# 4. Reasoning before JSON (no schema)
 python run.py absa-model-v5-cot results/test/results_v5_cot.json
 
-# 5. Klasik temel çizgi ve öğrenme eğrisi
+# 5. Classical baseline and learning curve
 python baseline_tfidf.py
 python learning_curve_tfidf.py
 
-# 6. Few-shot sayısı ve gecikme deneyi, grafik
+# 6. Few-shot prompt length / latency experiment and plot
 python exp_prompt_length.py
 python plot_prompt_length.py
 
-# 7. Tokenizer deneyi (ilk çalıştırmada Hugging Face'ten tokenizer indirir)
+# 7. Tokenizer experiment (downloads tokenizer from Hugging Face on first run)
 python exp_tokenization.py
 
-# 8. Grafikler: analysis.ipynb dosyasını açıp "Run All"
-#    (9. bölüm modeli canlı çağırır, Ollama açık olmalı)
+# 8. Open analysis.ipynb and select "Run All" to reproduce plots
+#    (Section 9 calls the model, so Ollama must be running)
 ```
 
-`run.py` seçenekleri:
+`run.py` command-line options:
 
-| Seçenek | Anlamı |
+| Option | Description |
 |---|---|
-| `--data <dosya>` | Veri dosyası (varsayılan: `data/absa_120.json`) |
-| `--schema` | Ollama'ya JSON şeması gönderir (constrained decoding) |
-| `--reason` | Çıktıda `reason` alanı bekler. `--schema` ile birlikte gerekçe şemasını kullanır |
-| `--think` | Qwen3 düşünme modunu açar (`--num-predict 2048` ile kullanılmalı) |
-| `--temperature`, `--seed`, `--num-predict` | Modelfile'daki parametreleri bu çalıştırma için değiştirir |
+| `--data <file>` | Dataset file (default: `data/absa_120.json`) |
+| `--schema` | Send a JSON schema to Ollama (constrained decoding) |
+| `--reason` | Expect a `reason` field; with `--schema`, use the reasoning schema |
+| `--think` | Enable Qwen3 thinking mode (use with `--num-predict 2048`) |
+| `--temperature`, `--seed`, `--num-predict` | Override the corresponding Modelfile parameters for this run |
 
-Her çalıştırma ölçümden önce bir ısınma (warm-up) isteği gönderir, böylece modelin belleğe yüklenme süresi süre ölçümüne dahil olmaz.
+Each run sends a warm-up request before timing, so model-loading time is excluded from the inference-duration measurements.
 
-## Nihai sistem
+## Final system
 
-**v4 Reason + Qwen3 1.7B Q4 + temperature 0 + JSON şeması.** Model, sentiment'e karar vermeden önce tek cümlelik bir gerekçe yazar. JSON şeması alanların sırasını (aspect → reason → sentiment) zorunlu kılar:
+**v4 Reason + Qwen3 1.7B Q4 + temperature 0 + JSON schema.** The model produces a one-sentence reason before selecting sentiment. The JSON schema specifies the expected fields in the order aspect → reason → sentiment:
 
 ```json
 {
@@ -198,39 +202,39 @@ Her çalıştırma ölçümden önce bir ısınma (warm-up) isteği gönderir, b
 }
 ```
 
-Gerekçe puanlanmaz. Değerlendirme yalnızca `sentiment` ve `aspect` alanlarını gold etiketlerle karşılaştırır.
+The `reason` field is not scored. Evaluation compares only the `sentiment` and `aspect` fields against the gold labels.
 
-Seçim süreci: dev setinde 4 iyileştirme yöntemi (Q8, few-shot, gerekçe alanı, iki aşamalı çağrı) karşılaştırıldı. Gerekçe alanı ile iki aşamalı yöntem joint accuracy'de berabere kaldı. Gerekçe alanı tek çağrı yaptığı ve yorumlanabilir olduğu için seçildi. Seçilen yöntem test setinde **yalnızca bir kez** çalıştırıldı (şemalı). Prompt-only karşılaştırması sonradan eklendi ve aynı çıktıları verdi.
+**Selection process:** Four improvement methods (Q8, few-shot prompting, a reasoning field, and a two-stage call) were compared on the development set. The reasoning-field and two-stage methods tied on joint accuracy. The reasoning-field approach was selected because it needs only one model call and produces an interpretable explanation. The selected method was run on the test set **only once** in its schema-constrained setting. The prompt-only comparison was added later and produced the same outputs.
 
-## Yapılan deneyler
+## Experiments performed
 
-| Deney | Soru | Ana bulgu |
+| Experiment | Research question | Main finding |
 |---|---|---|
-| v1 ile v2 | Görev sırası önemli mi? | Fark 1 örnek, etkisi yok |
-| Kısa prompt (weak) | Parser işe yarıyor mu? | İlk deneme başarısı %35'e düştü (78 çıktı ` ```json ` ile sarılmıştı), parser %100'e çıkardı |
-| JSON şeması | Format zorlanabilir mi? | %100 geçerli JSON, içerik ve doğruluk değişmiyor |
-| Prompt-only ve şema, v4 Reason | Şema doğruluğu etkiler mi? | 120 çıktının hepsi aynı, fark yalnızca süre (1,63 sn ve 1,40 sn) |
-| weak / v3 | Prompt ayrıntısı neyi etkiliyor? | Ayrıntılı kurallar aspect'i iyileştiriyor, sentiment'te negatif eğilim yaratıyor |
-| Q4 ile Q8 | Nicemleme etkisi? | Test setinde sentiment +4 örnek (McNemar p = 0,22), dev setinde iyileşme yok. Q8: bellekte 1,5 GB yerine 2,1 GB (+%40), %43 daha yavaş |
-| Temperature 0–1,0 | Rastgeleliğin etkisi? | Doğruluk farkı seed gürültüsü içinde (sentiment 0,931–0,942). JSON her durumda %100 |
-| Temperature 0 tekrarlanabilirlik | Aynı prompt iki kez aynı sonucu verir mi? | Tekrarda ve farklı seed'de 120/120 ham çıktı birebir aynı |
-| Düşünme modu | Akıl yürütme yardımcı mı? | Sentiment 0,958, aspect 0,842, 3/120 boş cevap, 19 kat daha yavaş |
-| Gerekçe alanı ve v5 CoT | Önce akıl yürütme doğruluğu etkiler mi? | Sentiment 0,942 → 0,992, joint 0,842 → 0,925 (alan içinde) ve 0,917 (önce metin). v5 CoT'ta ham JSON %0, parser'ın `extracted` aşaması %100'e çıkardı. Sentiment kazancı sınırda anlamlı (McNemar p = 0,07) |
-| Model boyutu | Daha büyük model? | qwen3:4b joint 0,925 (v2) ve 0,950 (Reason), 1,7 ve 3,0 sn. gemma3:4b joint 0,858, 4,2 ve 5,7 sn. Reason alanı 1,7B'de işe yarıyor, 4B'de kazanç az veya yok |
-| Klasik temel çizgi | LLM, TF-IDF ve LR'a karşı? | TF-IDF + LR: 80 örnekle %67–72, 10 örnekle %56. LLM eğitimsiz %94–99. LR tahmini 0,008 ms/örnek |
-| Öğrenme eğrisi | Klasik model kaç örnekle yaklaşır? | 272 örnekle %64, LLM'e yaklaşmıyor. Ek veri test setinden farklı dağılımda (elenen cümleler), bu yüzden saf "daha çok veri" etkisi değil |
-| Few-shot ve gecikme | Prompt uzunluğu süreyi nasıl etkiler? | k = 0–40 (428–1703 token): soğuk prefill 1,4 sn → 5,9 sn (~3,5 ms/token, neredeyse doğrusal), decode 35 → 39 ms/token. Önbellekli (sıcak) istekler k'dan bağımsız ~0,7 sn. Grafik: `results/prompt_length_experiment.png` |
-| Tokenizer | Türkçe neden daha çok token? | `kitaplarımızdan` → `kit \| ap \| larımız \| dan` (4 token), `books` tek token. 3 Türkçe/İngilizce çiftte oran 1,34. Hugging Face sayıları Ollama `prompt_eval_count` ile birebir aynı |
-| Dev seti yöntemleri | En iyi iyileştirme? | Gerekçe alanı (sentiment %98,8) |
+| v1 vs. v2 | Does task order matter? | Difference of one sample; no meaningful effect |
+| Weak prompt | Does the parser help? | Direct JSON success dropped to 35% (78 responses in Markdown JSON fences); the parser recovered 100% |
+| JSON schema | Can output format be constrained? | 100% valid JSON, without changing content or accuracy |
+| Prompt-only vs. schema, v4 Reason | Does schema affect accuracy? | All 120 outputs were identical; only runtime differed (1.63 s vs. 1.40 s) |
+| weak / v3 | What does prompt detail affect? | Detailed aspect rules improve extraction but introduce a negative sentiment bias |
+| Q4 vs. Q8 | Effect of quantization? | Four net additional correct sentiment predictions on the test set (McNemar p = 0.22); no improvement on the development set. Q8 used 2.1 GB instead of 1.5 GB (+40%) and was 43% slower |
+| Temperature 0–1.0 | Effect of sampling randomness? | Differences within seed variability (sentiment accuracy 0.931–0.942); JSON success remained 100% |
+| Temperature 0 reproducibility | Does an identical prompt give the same result twice? | Raw outputs were identical on 120/120 samples in a repeated run and with a different seed |
+| Thinking mode | Does extra reasoning help? | Sentiment 0.958, aspect 0.842, three empty outputs out of 120, and 19× slower |
+| Reasoning field and v5 CoT | Does reasoning improve accuracy? | Sentiment 0.942 → 0.992; joint 0.842 → 0.925 (reasoning inside JSON) or 0.917 (reasoning before JSON). v5 CoT raw JSON success was 0%, but extraction recovered 100%. Sentiment improvement was borderline significant (McNemar p = 0.07) |
+| Model size | Does a larger model help? | Qwen3 4B joint 0.925 (v2) and 0.950 (Reason), with 1.7 s and 3.0 s latency. Gemma3 4B joint 0.858, with 4.2 s and 5.7 s latency. Reasoning helped at 1.7B; gains at 4B were small or absent |
+| Classical baseline | LLM vs. TF-IDF + logistic regression? | TF-IDF + LR achieved roughly 67–72% with 80 examples and 56% with 10; LLM achieved 94–99% without task-specific training. LR prediction time was 0.008 ms/sample |
+| Learning curve | How much labeled data would a classical model need? | At 272 examples, accuracy was 64% and did not approach the LLM. Additional training data had a different distribution (previously excluded sentences), so this does not isolate the effect of data volume |
+| Few-shot examples and latency | How does prompt length affect latency? | k = 0–40 (428–1703 tokens): cold prefill increased 1.4 → 5.9 s (~3.5 ms/token, nearly linear); decode increased 35 → 39 ms/token. Warm, cached requests remained around 0.7 s regardless of k. Plot: `results/prompt_length_experiment.png` |
+| Tokenizer | Why does Turkish require more tokens? | `kitaplarımızdan` → `kit \| ap \| larımız \| dan` (four tokens); `books` is one token. Token count ratio across three Turkish/English pairs was 1.34. Hugging Face counts matched Ollama `prompt_eval_count` |
+| Development-set methods | Which improvement performed best? | Reasoning field (98.8% sentiment accuracy) |
 
-Hata analizleri (confusion matrix, olumsuzluk ifadeleri, yorum uzunluğu, aspect hata türleri, halüsinasyon, ironi) için [analysis.ipynb](analysis.ipynb).
+For error analysis (confusion matrices, negation, review length, aspect error types, hallucination, and sarcasm), see [analysis.ipynb](analysis.ipynb).
 
-## Sınırlamalar
+## Limitations
 
-- **Seçilmiş veri:** Yalnızca tek aspect'li, açık ifadeli cümleler kullanıldı. Karışık duygu ve çoğu ironi içeren cümleler elendi. Görev orijinal SemEval görevinden daha kolaydır. Elle eleme tek kişi tarafından yapıldı.
-- **Küçük örneklemler:** Bazı analizler çok az örneğe dayanır (olumsuzluk 5 cümle, ironi 8 cümle, gecikme deneyinde 30 örnek ve her k için tek soğuk ölçüm, tokenizer deneyinde 3 cümle çifti). Bu sonuçlar gözlem niteliğindedir. Sentiment farklarının çoğu istatistiksel olarak sınırda veya anlamsızdır.
-- **Test setinde keşif:** weak, v3, Q8, temperature, düşünme modu, v5 CoT ve model boyutu deneyleri test setinde yapıldı. Nihai yöntem dev setinde seçildi, ama yöntemin fikri test setinin hata analizinden doğdu.
-- **Tek model ailesi (ana sistem):** Ana deneyler Qwen3 1.7B ile yapıldı. Yalnızca model boyutu deneyinde qwen3:4b ve gemma3:4b denendi.
-- **Klasik temel çizgi:** Yalnızca sentiment'i yapar, aspect çıkaramaz. Öğrenme eğrisindeki ek eğitim verisi test setinden farklı dağılımdadır.
-- **Gecikme yorumları:** Dikkat (attention) maliyeti ve KV cache açıklamaları model boyutlarından yapılan hesaplara dayanır. Prefill'in O(n²) bileşeni bu uzunluklarda ölçüm gürültüsünden ayırt edilemedi. KV cache'in fp16 olduğu varsayıldı, doğrulanmadı.
-- **Düşünme modunda boş cevaplar:** `num_predict` bütçesinin tükenmesi tutarlı bir açıklama, ama `done_reason` kaydedilmediği için doğrulanmadı.
+- **Curated dataset:** Only clear, single-aspect sentences were selected. Mixed sentiment and most sarcastic sentences were excluded, making this task easier than the original SemEval benchmark. One person performed the manual exclusions.
+- **Small sample sizes:** Some analyses rely on few observations (five negation examples, eight sarcasm examples, 30 latency-test inputs with only one cold measurement per k, and three tokenizer sentence pairs). These results are descriptive; many sentiment differences are borderline or statistically insignificant.
+- **Exploration on the test set:** weak, v3, Q8, temperature, thinking mode, v5 CoT, and model-size experiments were conducted on the test set. The final method was selected on development data, but the idea for it came from test-set error analysis.
+- **Single model family in the main system:** The main experiments used Qwen3 1.7B; model-size experiments additionally tested Qwen3 4B and Gemma3 4B.
+- **Classical baseline:** The baseline only predicts sentiment; it does not extract aspects. Additional learning-curve data had a different distribution from the test set.
+- **Latency interpretation:** Attention cost and KV cache explanations are based on calculations from the model's dimensions, not on profiling. The O(n²) attention component could not be separated from measurement noise at these prompt lengths. An FP16 KV cache was assumed, not directly verified.
+- **Empty outputs in thinking mode:** Exhaustion of the `num_predict` budget is a consistent explanation, but `done_reason` was not recorded, so it could not be confirmed.
