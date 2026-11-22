@@ -1,0 +1,152 @@
+[
+  {
+    "id": 9001,
+    "text": "The tiramisu was rich, creamy and absolutely delicious.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "tiramisu",
+    "setting": "schema-constrained (format) | temperature 0.0",
+    "used_schema": true,
+    "options": {
+      "temperature": 0.0
+    },
+    "raw_response": "{\n  \"aspect\": \"tiramisu\",\n  \"reason\": \"The reviewer says the tiramisu was rich, creamy and absolutely delicious.\",\n  \"sentiment\": \"positive\"\n}",
+    "parsed_response": {
+      "aspect": "tiramisu",
+      "reason": "The reviewer says the tiramisu was rich, creamy and absolutely delicious.",
+      "sentiment": "positive"
+    },
+    "first_try_success": true,
+    "parse_stage": "direct",
+    "valid_schema": true,
+    "sentiment_correct": true,
+    "aspect_exact": true,
+    "aspect_partial": true,
+    "aspect_in_text": true,
+    "duration_seconds": 1.807
+  },
+  {
+    "id": 9002,
+    "text": "Our waiter forgot our drinks twice and never apologized.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "waiter",
+    "setting": "schema-constrained (format) | temperature 0.0",
+    "used_schema": true,
+    "options": {
+      "temperature": 0.0
+    },
+    "raw_response": "{\n  \"aspect\": \"drinks\",\n  \"reason\": \"The reviewer says the waiter forgot their drinks twice and never apologized.\",\n  \"sentiment\": \"negative\"\n}",
+    "parsed_response": {
+      "aspect": "drinks",
+      "reason": "The reviewer says the waiter forgot their drinks twice and never apologized.",
+      "sentiment": "negative"
+    },
+    "first_try_success": true,
+    "parse_stage": "direct",
+    "valid_schema": true,
+    "sentiment_correct": true,
+    "aspect_exact": false,
+    "aspect_partial": false,
+    "aspect_in_text": true,
+    "duration_seconds": 1.69
+  },
+  {
+    "id": 9003,
+    "text": "The lamb kebab was juicy and perfectly seasoned.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "lamb kebab",
+    "setting": "schema-constrained (format) | temperature 0.0",
+    "used_schema": true,
+    "options": {
+      "temperature": 0.0
+    },
+    "raw_response": "{\n  \"aspect\": \"lamb kebab\",\n  \"reason\": \"The reviewer says the lamb kebab was juicy and perfectly seasoned.\",\n  \"sentiment\": \"positive\"\n}",
+    "parsed_response": {
+      "aspect": "lamb kebab",
+      "reason": "The reviewer says the lamb kebab was juicy and perfectly seasoned.",
+      "sentiment": "positive"
+    },
+    "first_try_success": true,
+    "parse_stage": "direct",
+    "valid_schema": true,
+    "sentiment_correct": true,
+    "aspect_exact": true,
+    "aspect_partial": true,
+    "aspect_in_text": true,
+    "duration_seconds": 1.756
+  },
+  {
+    "id": 9004,
+    "text": "The music was so loud that we could not hear each other.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "music",
+    "setting": "schema-constrained (format) | temperature 0.0",
+    "used_schema": true,
+    "options": {
+      "temperature": 0.0
+    },
+    "raw_response": "{\n  \"aspect\": \"music\",\n  \"reason\": \"The reviewer says the music was so loud that we could not hear each other.\",\n  \"sentiment\": \"negative\"\n}",
+    "parsed_response": {
+      "aspect": "music",
+      "reason": "The reviewer says the music was so loud that we could not hear each other.",
+      "sentiment": "negative"
+    },
+    "first_try_success": true,
+    "parse_stage": "direct",
+    "valid_schema": true,
+    "sentiment_correct": true,
+    "aspect_exact": true,
+    "aspect_partial": true,
+    "aspect_in_text": true,
+    "duration_seconds": 1.552
+  },
+  {
+    "id": 9005,
+    "text": "The steak was not bad at all.",
+    "gold_sentiment": "positive",
+    "gold_aspect": "steak",
+    "setting": "schema-constrained (format) | temperature 0.0",
+    "used_schema": true,
+    "options": {
+      "temperature": 0.0
+    },
+    "raw_response": "{\n  \"aspect\": \"steak\",\n  \"reason\": \"The reviewer says the steak was not bad at all.\",\n  \"sentiment\": \"positive\"\n}",
+    "parsed_response": {
+      "aspect": "steak",
+      "reason": "The reviewer says the steak was not bad at all.",
+      "sentiment": "positive"
+    },
+    "first_try_success": true,
+    "parse_stage": "direct",
+    "valid_schema": true,
+    "sentiment_correct": true,
+    "aspect_exact": true,
+    "aspect_partial": true,
+    "aspect_in_text": true,
+    "duration_seconds": 1.465
+  },
+  {
+    "id": 9006,
+    "text": "Wow, the service was so fast that our food only took ninety minutes to arrive.",
+    "gold_sentiment": "negative",
+    "gold_aspect": "service",
+    "setting": "schema-constrained (format) | temperature 0.0",
+    "used_schema": true,
+    "options": {
+      "temperature": 0.0
+    },
+    "raw_response": "{\n  \"aspect\": \"service\",\n  \"reason\": \"The reviewer says the service was so fast that our food only took ninety minutes to arrive.\",\n  \"sentiment\": \"positive\"\n}",
+    "parsed_response": {
+      "aspect": "service",
+      "reason": "The reviewer says the service was so fast that our food only took ninety minutes to arrive.",
+      "sentiment": "positive"
+    },
+    "first_try_success": true,
+    "parse_stage": "direct",
+    "valid_schema": true,
+    "sentiment_correct": false,
+    "aspect_exact": true,
+    "aspect_partial": true,
+    "aspect_in_text": true,
+    "duration_seconds": 1.633
+  }
+]
